@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="horizontal" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp" >
+
+        <RelativeLayout
+            android:id="@+id/addstorylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+
+    <TextView
+        android:id="@+id/addtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/storytitlevalue"
+        android:layout_alignBottom="@+id/storytitlevalue"
+        android:layout_alignParentLeft="true"
+        android:text="@string/storytitle" />
+
+    <EditText
+        android:id="@+id/storytitlevalue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:inputType="text"
+        android:text="">
+        
+		
+        </EditText>
+
+    <TextView
+        android:id="@+id/addbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addbodyvalue"
+        android:layout_alignBottom="@+id/addbodyvalue"
+        android:layout_alignParentLeft="true"
+        android:text="@string/storybody" />
+
+    <EditText
+        android:id="@+id/addbodyvalue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/storytitlevalue"
+        android:inputType="text"
+        android:text="" />
+    <TextView
+        android:id="@+id/addaudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/audiobutton"
+        android:layout_alignBottom="@+id/audiobutton"
+        android:layout_alignParentLeft="true"
+        android:text="@string/Storyaudio" />
+
+    <Button
+        android:id="@+id/audiobutton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addbodyvalue"
+        android:text="@string/audio_button" />
+     <TextView
+                android:id="@+id/storyaudiolocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/addaudio"
+                android:text="" />
+     
+     <TextView
+        android:id="@+id/addvideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/videobutton"
+        android:layout_alignBottom="@+id/videobutton"
+        android:layout_alignParentLeft="true"
+        android:text="@string/storyvideo" />
+
+    <Button
+        android:id="@+id/videobutton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/storyaudiolocation"
+        android:text="@string/video_button" />
+    <TextView
+                android:id="@+id/storyvideolocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/addvideo"
+                android:text="" />
+    <TextView
+        android:id="@+id/addphotoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addphotovalue"
+        android:layout_alignBottom="@+id/addphotovalue"
+        android:layout_alignParentLeft="true"
+        android:text="@string/storyimage" />
+
+    <EditText
+        android:id="@+id/addphotovalue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/storyvideolocation"
+        android:inputType="text"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/addphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/imagebutton"
+        android:layout_alignBottom="@+id/imagebutton"
+        android:layout_alignParentLeft="true"
+        android:text="@string/storyimagelink" />
+
+    <Button
+        android:id="@+id/imagebutton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addphotovalue"
+        android:text="@string/photo_button" />
+    <TextView
+                android:id="@+id/storyphotolocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imagebutton"
+                android:text="" />
+     <TextView
+        android:id="@+id/addstorytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/storytimevalue"
+        android:layout_alignBottom="@+id/storytimevalue"
+        android:layout_alignParentLeft="true"
+        android:text="@string/story_time" />
+     <TextView
+        android:id="@+id/storytimevalue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storyphotolocation"
+        android:layout_alignParentRight="true"
+        android:text="@string/settime" />
+     
+      
+    <TextView
+        android:id="@+id/getlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/locationbutton"
+        android:layout_alignBottom="@+id/locationbutton"
+        android:layout_alignParentLeft="true"
+        android:text="@string/storylocation" />
+
+    <Button
+        android:id="@+id/locationbutton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/storytimevalue"
+        android:text="@string/locationbutton" />
+	<TextView
+        android:id="@+id/storylongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/longitudevalue"
+        android:layout_alignBottom="@+id/longitudevalue"
+        android:layout_alignParentLeft="true"
+        android:text="@string/storylongitude" />
+     <TextView
+        android:id="@+id/longitudevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationbutton"
+        android:layout_alignParentRight="true"
+        android:text="" />
+     <TextView
+        android:id="@+id/storylatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/latitudevalue"
+        android:layout_alignBottom="@+id/latitudevalue"
+        android:layout_alignParentLeft="true"
+        android:text="@string/storylatitude" />
+     <TextView
+        android:id="@+id/latitudevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/longitudevalue"
+        android:layout_alignParentRight="true"
+        android:text="" />
+       </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cancelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:text="@string/cancelbutton" />
+
+    <Button
+        android:id="@+id/createbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp"
+        android:text="@string/createbutton" />
+
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/resetbutton" />
+    
+</RelativeLayout>
